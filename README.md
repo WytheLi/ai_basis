@@ -69,11 +69,37 @@ pip install tables
 4、数据复杂处理
 
 4.1 缺失值处理
+- 判断数据是否是np.nan
+- 存在缺失值nan，且是np.nan
+- 存在缺失值nan，有默认标记
 
 4.2 数据离散化
+> 数据离散化：连续属性的离散化就是将连续属性的值域上，将值域划分为若干个离散的区间，最后用不同的符号或整数 值代表落在每个子区间中的属性值。
+
+
 
 4.3 合并
+- 应用pd.concat()实现数据的合并
+- 应用pd.join()实现数据的合并
+- 应用pd.merge()实现数据的合并
+
+|Merge method	|SQL Join Name	|Description    |
+|----   |----   |----   |
+|left	|LEFT OUTER JOIN    |	Use keys from left frame only|
+|right	|RIGHT OUTER JOIN   |	Use keys from right frame only|
+|outer	|FULL OUTER JOIN    |	Use union of keys from both frames|
+|inner	|INNER JOIN	        |   Use intersection of keys from both frames|
+> 可类比为数据库的内连 左连 右连 外连查询
 
 4.4 交叉表和透视表
 
 4.5 分组与聚合
+
+
+
+### 参考
+- [pandas中强大的绘制图表功能——DataFrame.hist()](https://blog.csdn.net/gaishi_hero/article/details/81433595)
+- [pandas.DataFrame.plot](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html)
+- [matplotlib.org](https://matplotlib.org/tutorials/index.html)
+- [matplotlib绘图axes子坐标系的更多方法](https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes)
+- [机器学习总结之——Dummy Coding(哑变量)](https://blog.csdn.net/weixin_42715356/article/details/82924665)
